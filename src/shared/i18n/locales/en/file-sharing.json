@@ -1,0 +1,82 @@
+{
+	"head": {
+		"title": "select all",
+		"titleSuffix": "",
+		"description": "select all is a new publishing model that supports the entire process from market strategy planning to execution based on the potential of games. It fosters mutual growth for developers and publishers through strategic partnerships with promising games."
+	},
+	"ctaBtn": "Request Publishing Review",
+	"sectionHero": {
+		"heading": {
+			"default": "Discover the<br><span data-text=\"full potential of\">full potential of</span><br>every game",
+			"md": "Discover the<br><span data-text=\"full potential of\">full potential of</span> every game",
+			"lg": "Discover the<br><span data-text=\"full potential of\">full potential of</span><br>every game"
+		}
+	},
+	"sectionIntro": {
+		"textboxOne": "<h2>Discover the</h2><h2><span>full potential of</span></h2><h2>every game",
+		"textboxTwo": {
+			"default": "Every game holds<br>a seed of success.<br>We analyze its potential<br>through data-driven<br>insights to unlock<br>even greater outcomes.<br><span>We are a new kind of</span><br><span>publishing brand,</span><br><span>built for what's next.</span>",
+			"xs": "Every game holds a seed<br>of success. We analyze<br>its potential through data-<br>driven insights to unlock<br>even greater outcomes.<br><span>We are a new kind of publishing</span><br><span>brand, built for what's next.</span>",
+			"sm": "Every game holds a seed of success.<br>We analyze its potential through<br>data-driven insights to unlock <br>even greater outcomes.<br><span>We are a new kind of publishing brand,</span><br><span>built for what's next.</span>",
+			"md": "Every game holds a seed of success.<br>We analyze its potential through data-driven<br>insights to unlock even greater outcomes.<br><span>We are a new kind of publishing brand,</span><br><span>built for what's next.</span>",
+			"lg": "Every game holds a seed of success.<br>We analyze its potential through data-driven<br>insights to unlock even greater outcomes.<br><span>We are a new kind of publishing brand,</span><br><span>built for what's next.</span>"
+		}
+	},
+	"sectionAppealOne": {
+		"textboxOne": {
+			"heading": "Quantifying",
+			"content": "<i>select all</i> evaluates game value<br/>based on data"
+		},
+		"textboxTwo": {
+			"heading": "<span>Value</span>",
+			"content": {
+				"default": "and sets clear, measurable <br>goals aligned with the market <br>and platform environment",
+				"md": "and sets clear, measurable goals<br>aligned with the market <br>and platform environment",
+				"lg": "And sets clear, measurable goals<br>aligned with the market <br>and platform environment",
+				"xl": "And sets clear, measurable goals<br>aligned with the market and <br>platform environment"
+			}
+		},
+		"textboxMobile": {
+			"heading": {
+				"default": "Quantifying <br><span>Value</span>",
+				"xs": "Quantifying <span>Value</span>"
+			},
+			"content": {
+				"default": "<i>select all</i> evaluates game value<br>based on data and sets clear,<br>measurable goals aligned with<br>the market and platform environment",
+				"xs": "<i>select all</i> evaluates game value based on <br>data and sets clear, measurable goals aligned <br>with the market and platform environment"
+			}
+		}
+	},
+	"sectionAppealTwo": {
+		"textboxOne": {
+			"heading": "Outcomes",
+			"content": {
+				"default": "<i>select all</i> transforms potential into <br>performance with publishing expertise<br>and an integrated service platform"
+			}
+		},
+		"textboxTwo": {
+			"heading": "Beyond<br><span>Expectations</span>",
+			"gamescaleBtn": "GameScale"
+		},
+		"textboxMobile": {
+			"heading": {
+				"default": "Outcomes <br>Beyond<br><span>Expectations</span>",
+				"xs": "Outcomes Beyond<br><span>Expectations</span>"
+			},
+			"content": {
+				"default": "<i>select all</i> transforms potential into <br>performance with publishing expertise<br>and an integrated service platform"
+			},
+			"gamescaleBtn": "GameScale"
+		}
+	},
+	"sectionOutro": {
+		"text": {
+			"default": "Your game holds<br>limitless potential",
+			"xs": "Your game holds limitless potential"
+		},
+		"strongText": {
+			"default": "Create<br>new success with",
+			"xs": "Create new success with"
+		}
+	}
+}

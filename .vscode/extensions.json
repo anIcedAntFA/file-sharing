@@ -1,0 +1,12 @@
+{
+	"recommendations": [
+		"aaron-bond.better-comments",
+		"editorconfig.editorconfig",
+		"streetsidesoftware.code-spell-checker",
+		"stylelint.vscode-stylelint",
+		"yoavbls.pretty-ts-errors",
+		"usernamehw.errorlens",
+		"dbaeumer.vscode-eslint",
+		"esbenp.prettier-vscode"
+	]
+}
