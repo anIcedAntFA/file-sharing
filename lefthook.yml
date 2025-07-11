@@ -1,0 +1,28 @@
+pre-commit:
+  # Run all commands in parallel for maximum speed
+  parallel: true
+  commands:
+    biome:
+      glob: '*.{js,ts,jsx,tsx,json,jsonc}'
+      run: bunx @biomejs/biome check --write --no-errors-on-unmatched --colors=off {staged_files}
+      stage_fixed: true
+
+pre-push:
+  # Before pushing, run a final check on the entire project to catch anything missed.
+  parallel: false
+  commands:
+    # Check branch name format
+    check-branch-name:
+      run: npx validate-branch-name
+    # Check all types across the project
+    check-types:
+      run: bun run type-check
+    # Check for circular dependencies
+    check-deps:
+      run: bun run circular
+
+# commit-msg:
+#   commands:
+#     # Validate the commit message format
+#     commitlint:
+#       run: bunx commitlint --edit {1}

@@ -12,7 +12,7 @@ const isFile = (value: unknown): value is File => value instanceof File;
  * @returns The file name string if it's a File, otherwise an empty string.
  */
 const getFileName = (file: unknown): string => {
-  return isFile(file) ? file.name : '';
+	return isFile(file) ? file.name : '';
 };
 
 /**
@@ -22,19 +22,19 @@ const getFileName = (file: unknown): string => {
  * @returns A formatted string representing the file size (e.g., "1.23 MB").
  */
 const formatFileSize = (bytes: number, decimals = 2): string => {
-  if (!bytes || bytes === 0) return '0 Bytes'; // Handle null/undefined/zero bytes
-  const k = 1024;
-  const dm = decimals < 0 ? 0 : decimals;
-  const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
-  const i = Math.floor(Math.log(bytes) / Math.log(k));
-  // Ensure we don't go beyond available sizes and handle potential NaN/Infinity
-  if (i >= sizes.length || !Number.isFinite(bytes) || bytes < 0)
-    return 'Invalid Size';
-  return `${parseFloat((bytes / k ** i).toFixed(dm))} ${sizes[i]}`;
+	if (!bytes || bytes === 0) return '0 Bytes'; // Handle null/undefined/zero bytes
+	const k = 1024;
+	const dm = decimals < 0 ? 0 : decimals;
+	const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB'];
+	const i = Math.floor(Math.log(bytes) / Math.log(k));
+	// Ensure we don't go beyond available sizes and handle potential NaN/Infinity
+	if (i >= sizes.length || !Number.isFinite(bytes) || bytes < 0)
+		return 'Invalid Size';
+	return `${parseFloat((bytes / k ** i).toFixed(dm))} ${sizes[i]}`;
 };
 
 export const FILE_LIB = {
-  isFile,
-  getFileName,
-  formatFileSize,
+	isFile,
+	getFileName,
+	formatFileSize,
 };

@@ -1,5 +1,5 @@
 @import "tailwindcss";
 
 .root {
-  isolation: isolate;
+	isolation: isolate;
 }

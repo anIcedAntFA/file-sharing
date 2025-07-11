@@ -1,9 +1,9 @@
-import { useWindowScroll } from "@/shared/lib/utility-hooks/use-window-scroll";
+import { useWindowScroll } from '@/shared/lib/utility-hooks/use-window-scroll';
 
 export const TestPage = () => {
 	const scrollY = useWindowScroll((s) => s.scrollY);
 
-	console.log("FileSharingPage scrollY:", scrollY);
+	console.info('FileSharingPage scrollY:', scrollY);
 
 	return (
 		<div>

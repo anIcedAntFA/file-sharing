@@ -1,7 +1,8 @@
-import { createFileRoute, Outlet } from "@tanstack/react-router";
-import { I18N_CLIENT } from "@/shared/i18n";
+import { createFileRoute, Outlet } from '@tanstack/react-router';
 
-export const Route = createFileRoute("/$locale")({
+import { I18N_CLIENT } from '@/shared/i18n';
+
+export const Route = createFileRoute('/$locale')({
 	beforeLoad: async ({ params }) => {
 		// Sync i18n language with route
 		if (I18N_CLIENT.language !== params.locale) {

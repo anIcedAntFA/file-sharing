@@ -15,25 +15,25 @@
  * ```
  */
 const copyToClipboard = async (text: string): Promise<boolean> => {
-  if (!navigator.clipboard) {
-    console.error('Clipboard API not available');
-    return false;
-  }
+	if (!navigator.clipboard) {
+		console.error('Clipboard API not available');
+		return false;
+	}
 
-  try {
-    await navigator.clipboard.writeText(text);
-    return true;
-  } catch (error) {
-    console.error('Failed to copy:', error);
-    return false;
-  }
+	try {
+		await navigator.clipboard.writeText(text);
+		return true;
+	} catch (error) {
+		console.error('Failed to copy:', error);
+		return false;
+	}
 };
 
 const transformCamelCaseToKebabCase = (str: string): string => {
-  return str.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
+	return str.replace(/([a-z0-9])([A-Z])/g, '$1-$2').toLowerCase();
 };
 
 export const TEXT_LIB = {
-  copyToClipboard,
-  transformCamelCaseToKebabCase,
+	copyToClipboard,
+	transformCamelCaseToKebabCase,
 };

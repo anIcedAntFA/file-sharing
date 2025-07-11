@@ -1,6 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { AboutPage } from "@/pages/about/about";
+import { createFileRoute } from '@tanstack/react-router';
 
-export const Route = createFileRoute("/$locale/about")({
+import { AboutPage } from '@/pages/about/about';
+
+export const Route = createFileRoute('/$locale/about')({
 	component: AboutPage,
 });
