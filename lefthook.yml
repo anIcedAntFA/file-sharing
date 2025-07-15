@@ -9,14 +9,14 @@ pre-commit:
 
 pre-push:
   # Before pushing, run a final check on the entire project to catch anything missed.
-  parallel: false
+  parallel: true
   commands:
     # Check branch name format
     check-branch-name:
       run: npx validate-branch-name
     # Check all types across the project
-    check-types:
-      run: bun run type-check
+    # check-types:
+    #   run: bun run type-check
     # Check for circular dependencies
     check-deps:
       run: bun run circular

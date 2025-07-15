@@ -20,7 +20,7 @@ export const createInstance = ({
 }: ICreateInstanceProps) => {
 	const instance = axios.create({
 		baseURL,
-		timeout: SECOND * 10,
+		// timeout: SECOND * 10,
 		headers: {
 			'Content-Type': 'application/json',
 			...(apiKey ? { 'x-inface-api-key': apiKey } : {}),

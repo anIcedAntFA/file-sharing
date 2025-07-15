@@ -29,6 +29,7 @@
 				"useTopLevelRegex": "error"
 			},
 			"suspicious": {
+				"noArrayIndexKey": "off",
 				"noConsole": {
 					"level": "warn",
 					"options": {

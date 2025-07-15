@@ -15,7 +15,7 @@ const RootComponent = () => {
 	return (
 		<>
 			<HeadContent />
-			<div className='root h-[200vh] w-[200vw]'>
+			<div className='root'>
 				<Outlet />
 				<TanStackRouterDevtools />
 			</div>

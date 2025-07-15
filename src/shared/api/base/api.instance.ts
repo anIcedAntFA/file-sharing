@@ -4,5 +4,4 @@ import { createInstance } from './api.lib';
 
 export const API_CLIENT = createInstance({
 	baseURL: ENV.apiBaseURL,
-	transformResponse: (response) => response.data,
 });
