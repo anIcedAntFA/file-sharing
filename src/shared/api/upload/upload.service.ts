@@ -2,7 +2,7 @@ import { UPLOAD_ENDPOINTS } from './upload.config';
 import {
 	CompleteMultipartUploadSchema,
 	CreateMultipartUploadSchema,
-	UploadChunkSchema,
+	// UploadChunkSchema,
 	UploadPartResSchema,
 	UploadPartSchema,
 } from './upload.contract';

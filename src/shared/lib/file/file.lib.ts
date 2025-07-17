@@ -112,9 +112,12 @@ const isValidExtensionName = (
 	const fileNameParts = splitFilenameParts(file.name);
 	const fileExtension = fileNameParts.extension.toLowerCase();
 
-	return allowedExtensions
-		.map((ext) => ext.replace(/^\./, ''))
-		.includes(fileExtension);
+	return (
+		allowedExtensions
+			// biome-ignore lint/performance/useTopLevelRegex: <TODO>
+			.map((ext) => ext.replace(/^\./, ''))
+			.includes(fileExtension)
+	);
 };
 
 /**

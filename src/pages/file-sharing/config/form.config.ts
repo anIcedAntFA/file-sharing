@@ -6,10 +6,12 @@ export const ALLOWED_MIME_TYPES = [
 	'application/vnd.ms-powerpoint', // .ppt
 	'application/vnd.openxmlformats-officedocument.presentationml.presentation', // .pptx
 	'application/msword', // .doc
+	'video/mp4', // .mp4
 ];
-export const ALLOWED_EXTENSIONS_STRING = '.pdf, .ppt, .pptx, .doc'; // For user display
 
-export const ATTACHMENT_ACCEPT = '.pdf,.ppt,.pptx,.doc';
+export const ALLOWED_EXTENSIONS_STRING = '.pdf, .ppt, .pptx, .doc, .mp4'; // For user display
+
+export const ATTACHMENT_ACCEPT = '.pdf,.ppt,.pptx,.doc,.mp4';
 
 export const DEFAULT_FORM_VALUE = {
 	company: '',

@@ -232,13 +232,13 @@ export const FileUploader = ({
 		processingErrors.length > 0 ? processingErrors[0] : fieldError?.message;
 
 	return (
-		// biome-ignore lint/a11y/noStaticElementInteractions: <explanation>
+		// biome-ignore lint/a11y/noStaticElementInteractions: <TODO>
 		<div
 			className={clsx('flex flex-col gap-1', classWrapper)}
 			onBlur={handleBlurWrapper}
 			ref={uploaderWrapperRef}
 		>
-			{/** biome-ignore lint/a11y/noStaticElementInteractions: <explanation> */}
+			{/** biome-ignore lint/a11y/noStaticElementInteractions: <TODO> */}
 			<div
 				className={clsx(
 					'p-3 border border-dashed border-gray-200 rounded-md transition-colors',

@@ -3,7 +3,7 @@ import axios, { AxiosError, isAxiosError } from 'axios';
 import qs from 'query-string';
 import { ZodError, type ZodType } from 'zod';
 
-import { SECOND } from '@/shared/config/date.config';
+// import { SECOND } from '@/shared/config/date.config';
 
 import { APIErrorDataDTOSchema } from './api.schema';
 import type { APIErrorData, APIErrorDataDTO } from './api.type';
